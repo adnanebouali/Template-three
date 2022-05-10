@@ -82,11 +82,29 @@ a {
   position: relative;
   color: black;
   padding: 0 30px;
+  overflow: hidden;
   transition: var(--main-transition);
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
   font-size: 18px;
+}
+.header .container ul.main-nav > li > a::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: var(--main-color);
+  top: 0;
+  left: -100%;
+  transition: var(--main-transition);
+}
+.header .container ul.main-nav > li > a:hover:before {
+  left: 0%;
+}
+.header .container ul.main-nav > li > a:hover {
+  background-color: #eee;
+  color: var(--main-color-alt);
 }
 /* End Header  */
