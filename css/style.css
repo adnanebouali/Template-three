@@ -93,7 +93,7 @@ a {
 .header .container ul.main-nav > li > a::before {
   content: "";
   position: absolute;
-  height: 5px;
+  height: 4px;
   width: 100%;
   background-color: var(--main-color);
   top: 0;
@@ -104,7 +104,7 @@ a {
   left: 0%;
 }
 .header .container ul.main-nav > li > a:hover {
-  background-color: #eee;
+  background-color: #fafafa;
   color: var(--main-color-alt);
 }
 /* End Header  */
