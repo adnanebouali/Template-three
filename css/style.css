@@ -1,7 +1,15 @@
 /* Start Global Rules  */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
 }
 html {
   scroll-behavior: smooth;
@@ -22,8 +30,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  background-color: red;
 }
 @media (min-width: 768px) {
   .container {
@@ -43,3 +49,44 @@ a {
   }
 }
 /* End Global Rules  */
+/* Start Header  */
+.header {
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.header .container .logo {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .container ul.main-nav {
+  display: flex;
+}
+.header .container ul.main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  position: relative;
+  color: black;
+  padding: 0 30px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  font-size: 18px;
+}
+/* End Header  */
