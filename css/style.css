@@ -145,3 +145,40 @@ a {
 }
 
 /* End Header  */
+/* Start landing  */
+.landing {
+  position: relative;
+}
+.landing::before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+.landing .container {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.landing .image img {
+  width: 600px;
+  max-width: 100%;
+}
+.landing .go-down {
+}
+.landing .go-down:hover {
+}
+.landing .go-down i {
+  color: var(--main-color);
+  font-size: 50px;
+  background-color: red;
+}
+/* End landing  */
