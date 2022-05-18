@@ -481,6 +481,10 @@ ul {
   border-style: solid;
   border-width: 0 0 170px 500px;
   border-color: transparent transparent white transparent;
+  transition: var(--main-transition);
+}
+.features .box:hover .img-holder::after {
+  border-width: 170px 500px 170px 0;
 }
 .features .box .img-holder img {
   max-width: 100%;
