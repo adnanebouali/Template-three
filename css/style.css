@@ -591,6 +591,10 @@ ul {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
   border-radius: 6px;
   position: relative;
+  transition: var(--main-transition);
+}
+.testimonials .box:hover {
+  transform: scale(1.05);
 }
 .testimonials .box img {
   position: absolute;
@@ -600,6 +604,10 @@ ul {
   width: 100px;
   height: 100px;
   border: 10px solid var(--section-background);
+  transition: 0.5s;
+}
+.testimonials .box:hover img {
+  transform: rotate(1turn);
 }
 .testimonials .box h3 {
   margin: 0 0 10px;
