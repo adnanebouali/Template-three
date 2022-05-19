@@ -574,6 +574,7 @@ ul {
   color: white;
 }
 /* End Features */
+/* Start Testimonials  */
 .testimonials {
   padding-top: var(--main-section-padding);
   padding-bottom: var(--main-section-padding);
@@ -627,7 +628,38 @@ ul {
   margin-bottom: 0;
 }
 /* End Testimonials */
-/*  Testimonials */
+/* Start Team Members */
+.team {
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+  position: relative;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.team .box {
+  position: relative;
+}
+.team .box::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 60px);
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  z-index: -2;
+}
+.team .box .data img {
+  max-width: 100%;
+}
+.team .box .data .social {
+}
+
+/* End Team Members */
 /* Start animation */
 @keyframes updown {
   0%,
