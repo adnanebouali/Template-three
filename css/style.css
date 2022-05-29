@@ -124,6 +124,21 @@ ul {
   background-size: 30px 30px;
 }
 
+.dots-up {
+  top: 200px;
+  right: 0;
+}
+.dots-down {
+  bottom: 200px;
+  left: 0;
+}
+.dots {
+  background-image: url("../img/dots.png");
+  height: 186px;
+  width: 204px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
 /* End Global Rules */
 /* Start Header */
 .header {
@@ -1199,6 +1214,49 @@ ul {
   background-color: var(--main-color-alt);
 }
 /* End Events */
+/* Start Pricing  */
+.pricing {
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+  position: relative;
+  background-color: var(--section-background);
+}
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.pricing .box {
+  position: relative;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  transition: var(--main-transition);
+  background: white;
+  text-align: center;
+  z-index: 1;
+}
+.pricing .box::before,
+.pricing .box::after {
+  content: "";
+  width: 0;
+  height: 50%;
+  background-color: #f6f6f6;
+  position: absolute;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.pricing .box::before {
+  left: 0;
+  top: 0;
+}
+.pricing .box::after {
+  right: 0;
+  bottom: 0;
+}
+.pricing .box:hover::before,
+.pricing .box:hover::after {
+  width: 100%;
+}
+/* End Pricing */
 /* Start animation */
 @keyframes updown {
   0%,
