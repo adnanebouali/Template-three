@@ -1477,6 +1477,58 @@ ul {
   color: var(--main-color);
 }
 /* End Stats */
+/* Start Discount */
+.discount {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.discount .image {
+  background-image: url(../img/discount-background1.jpg);
+  background-size: cover;
+  color: white;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.discount .image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(23 135 224 / 97%);
+  z-index: -1;
+}
+
+.discount .content img {
+  width: 300px;
+  max-width: 100%;
+}
+.discount .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+}
+.discount .content {
+  text-align: center;
+  padding: 0 20px;
+}
+.discount .content h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+.discount .content p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+/* End Discount */
 /* Start animation */
 @keyframes updown {
   0%,
