@@ -1065,9 +1065,64 @@ ul {
   font-size: 18px;
   color: #777;
 }
-
 /* End work steps */
 
+/* Start Events */
+.events {
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+  position: relative;
+}
+
+.events .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.events .container img {
+  max-width: 450px;
+}
+@media (max-width: 991px) {
+  .events .container img {
+    display: none;
+  }
+}
+.events .container .info {
+  flex: 1;
+}
+.events .container .info .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+.events .container .info .time .unit {
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  text-align: center;
+  width: 75px;
+  transition: var(--main-transition);
+}
+.events .container .info .time .unit span {
+  display: block;
+}
+.events .container .info .time .unit span:first-child {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 15px;
+  color: var(--main-color);
+}
+.events .container .info .time .unit span:last-child {
+  padding: 8px 10px;
+  font-size: 13px;
+  border-top: 1px solid #d4d4d4;
+}
+.events .container .subscribe {
+  width: 100%;
+  margin-top: 50px;
+}
+/* End Events */
 /* Start animation */
 @keyframes updown {
   0%,
