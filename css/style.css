@@ -1493,6 +1493,8 @@ ul {
   align-items: center;
   position: relative;
   z-index: 1;
+  animation: change-background 10s linear infinite;
+  -webkit-animation: change-background 10s linear infinite;
 }
 .discount .image::before {
   content: "";
@@ -1504,7 +1506,11 @@ ul {
   background-color: rgb(23 135 224 / 97%);
   z-index: -1;
 }
-
+@media (max-width: 991px) {
+  .discount .image {
+    flex-basis: 100%;
+  }
+}
 .discount .content img {
   width: 300px;
   max-width: 100%;
@@ -1514,6 +1520,44 @@ ul {
   justify-content: center;
   align-items: center;
   flex-basis: 50%;
+  padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .discount .form {
+    flex-basis: 100%;
+  }
+}
+.discount .form .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+}
+
+.discount .form textarea.input {
+  resize: none;
+  height: 200px;
+}
+.discount .form .input:focus {
+  outline: none;
+}
+.discount .form [type="submit"] {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+.discount .form [type="submit"]:hover {
+  background-color: var(--main-color-alt);
 }
 .discount .content {
   text-align: center;
@@ -1524,9 +1568,13 @@ ul {
   letter-spacing: -2px;
 }
 .discount .content p {
+  line-height: 1.6;
   font-size: 18px;
   max-width: 500px;
-  line-height: 1.6;
+}
+.discount .content img {
+  width: 300px;
+  max-width: 100%;
 }
 /* End Discount */
 /* Start animation */
@@ -1603,6 +1651,15 @@ ul {
     opacity: 0;
     width: 200%;
     height: 200%;
+  }
+}
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url(../img/discount-background1.jpg);
+  }
+  50% {
+    background-image: url(../img/discount-background2.jpg);
   }
 }
 
