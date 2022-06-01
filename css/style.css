@@ -1530,7 +1530,7 @@ ul {
 .discount .form .input {
   display: block;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 25v px;
   padding: 15px;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -1577,6 +1577,41 @@ ul {
   max-width: 100%;
 }
 /* End Discount */
+/* start footer  */
+.footer {
+  background-color: #191919;
+  padding: 70px 0 0;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.footer .box h3 {
+  color: white;
+  font-size: 50px;
+  margin: 0 0 20px;
+}
+.footer .box .social {
+  display: flex;
+}
+.footer .box .social li {
+  margin-right: 10px;
+}
+.footer .box .social li a {
+  background-color: #313131;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+
+/* end footer  */
 /* Start animation */
 @keyframes updown {
   0%,
