@@ -1,6 +1,6 @@
 # Template-three
 Third template of Elzero's three templates that i'm practicing on
 # status 
-100%
+completed
 # Live Demo
- https://adnanebouali.github.io/Template-three/
+<a href="https://adnanebouali.github.io/Template-three/" target="_blank"><b>Leon-Template-one</b></a>
